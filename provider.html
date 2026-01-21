@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Provider Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Service Provider Dashboard</h1>
+
+<h2>Create / Update Profile</h2>
+<input id="providerName" placeholder="Your Name"><br>
+<select id="serviceType">
+  <option value="Plumber">Plumber</option>
+  <option value="Electrician">Electrician</option>
+  <option value="Cleaner">Cleaner</option>
+</select><br>
+<input id="experience" type="number" placeholder="Years of Experience"><br>
+<input id="price" type="number" placeholder="Price per Hour"><br>
+<button onclick="saveProfile()">Save Profile</button>
+
+<h2>Your Bookings</h2>
+<div id="bookingList"></div>
+
+<script src="js/provider.js"></script>
+</body>
+</html>

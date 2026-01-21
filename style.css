@@ -1,0 +1,149 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body background and center content */
+body {
+  background: linear-gradient(135deg, #6a11cb 0%, #25e3fc 100%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Main title */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+/* Navigation links container */
+div > a {
+  color: #13cbd8;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+div > a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Container for nav links */
+div {
+  margin-bottom: 30px;
+}
+
+/* Subtitle */
+h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Dropdown & button container */
+select, button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin: 0 5px 20px 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Dropdown styling */
+select {
+  background-color: #fff;
+  color: #333;
+  min-width: 150px;
+}
+
+/* Button styling */
+button {
+  background-color: #ffe600;
+  color: #333;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(255, 230, 0, 0.7);
+}
+
+button:hover {
+  background-color: #fff200;
+  box-shadow: 0 8px 20px rgba(255, 242, 0, 0.9);
+}
+
+/* Result cards */
+#results {
+  max-width: 400px;
+  width: 100%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px 25px;
+  margin: 15px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+}
+
+/* Card headings */
+.card h3 {
+  color: #2575fc;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Card paragraphs */
+.card p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Card button */
+.card button {
+  background-color: #2575fc;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(37, 117, 252, 0.7);
+}
+
+.card button:hover {
+  background-color: #1a52d1;
+  box-shadow: 0 8px 20px rgba(26, 82, 209, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .card {
+    padding: 15px 20px;
+  }
+  select, button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
